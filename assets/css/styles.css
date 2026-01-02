@@ -198,12 +198,147 @@ nav {
 }
 
 #game-play {
+  margin: 8rem auto;
+
   h2 {
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
   }
 
   p strong {
     color: var(--primary-color);
   }
 }
+
+.info-grid {
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+  .info-card {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    border: 2px solid var(--primary-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(71, 191, 232, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(71, 191, 232, 0.3);
+      border-color: #fff;
+
+      &:before {
+        left: 100%;
+      }
+    }
+
+    .card-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin: 1rem 0 1.5rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin: 1rem 0;
+
+      strong {
+        color: var(--primary-color);
+        font-weight: 600;
+      }
+    }
+
+    .expansion {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #999;
+      font-size: 0.9rem;
+    }
+  }
+
+  .tickets-card {
+    .ticket-icon {
+      margin-bottom: 2rem;
+    }
+
+    .ticket-shape {
+      position: relative;
+      background: var(--primary-color);
+      padding: 2rem 3rem;
+      margin: 0 auto;
+      max-width: 250px;
+      clip-path: polygon(
+        0% 15%, 3% 15%, 3% 10%, 6% 10%, 6% 15%, 9% 15%, 9% 10%, 12% 10%, 12% 15%,
+        15% 15%, 15% 10%, 18% 10%, 18% 15%, 21% 15%, 21% 10%, 24% 10%, 24% 15%,
+        27% 15%, 27% 10%, 30% 10%, 30% 15%, 33% 15%, 33% 10%, 36% 10%, 36% 15%,
+        39% 15%, 39% 10%, 42% 10%, 42% 15%, 45% 15%, 45% 10%, 48% 10%, 48% 15%,
+        51% 15%, 51% 10%, 54% 10%, 54% 15%, 57% 15%, 57% 10%, 60% 10%, 60% 15%,
+        63% 15%, 63% 10%, 66% 10%, 66% 15%, 69% 15%, 69% 10%, 72% 10%, 72% 15%,
+        75% 15%, 75% 10%, 78% 10%, 78% 15%, 81% 15%, 81% 10%, 84% 10%, 84% 15%,
+        87% 15%, 87% 10%, 90% 10%, 90% 15%, 93% 15%, 93% 10%, 96% 10%, 96% 15%,
+        100% 15%, 100% 85%, 96% 85%, 96% 90%, 93% 90%, 93% 85%, 90% 85%, 90% 90%,
+        87% 90%, 87% 85%, 84% 85%, 84% 90%, 81% 90%, 81% 85%, 78% 85%, 78% 90%,
+        75% 90%, 75% 85%, 72% 85%, 72% 90%, 69% 90%, 69% 85%, 66% 85%, 66% 90%,
+        63% 90%, 63% 85%, 60% 85%, 60% 90%, 57% 90%, 57% 85%, 54% 85%, 54% 90%,
+        51% 90%, 51% 85%, 48% 85%, 48% 90%, 45% 90%, 45% 85%, 42% 85%, 42% 90%,
+        39% 90%, 39% 85%, 36% 85%, 36% 90%, 33% 90%, 33% 85%, 30% 85%, 30% 90%,
+        27% 90%, 27% 85%, 24% 85%, 24% 90%, 21% 90%, 21% 85%, 18% 85%, 18% 90%,
+        15% 90%, 15% 85%, 12% 85%, 12% 90%, 9% 90%, 9% 85%, 6% 85%, 6% 90%,
+        3% 90%, 3% 85%, 0% 85%
+      );
+      box-shadow: 0 10px 30px rgba(71, 191, 232, 0.5);
+      animation: ticketFloat 3s ease-in-out infinite;
+
+      .ticket-date {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@keyframes ticketFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+

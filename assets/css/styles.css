@@ -38,7 +38,6 @@ header h1 {
   font-size: 4rem;
   margin: 2rem 0;
   position: absolute;
-  
 }
 
 header h1:first-child {
@@ -149,7 +148,6 @@ nav {
     font-size: 4rem;
     margin-bottom: 3rem;
     text-align: center;
-    color: var(--primary-color);
   }
 
   .ai-list {
@@ -163,7 +161,7 @@ nav {
       background: #121212;
       border: 1px solid var(--primary-color);
       padding: 2rem;
-      
+
       h3 {
         font-size: 2rem;
         color: var(--primary-color);
@@ -196,5 +194,16 @@ nav {
         }
       }
     }
+  }
+}
+
+#game-play {
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  p strong {
+    color: var(--primary-color);
   }
 }

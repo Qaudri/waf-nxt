@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: 'MAVIS';
-	src: url('assets/fonts/MAVISRegular.woff') format('woff');
+	src: url('../fonts/MAVISRegular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: 'MAVIS';
-	src: url('assets/fonts/MAVISLight.woff') format('woff');
+	src: url('../fonts/MAVISLight.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'MAVIS';
-	src: url('assets/fonts/MAVISBold.woff') format('woff');
+	src: url('../fonts/MAVISBold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -27,9 +27,8 @@
 
 @font-face {
 	font-family: 'Ternov';
-	src: url('assets/fonts/Ternov.woff') format('woff'),
-			 url('assets/fonts/Ternov.ttf') format('truetype'),
-			 url('assets/fonts/Ternov.otf') format('opentype');
+	src: url('../fonts/Ternov.ttf') format('truetype'),
+			 url('../fonts/Ternov.otf') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -50,14 +49,9 @@ body {
 }
 
 .ternov {
-  font-family: 'Ternov', sans-serif;
+  font-family: 'Ternov', sans-serif !important;
 }
 
 .mavis {
   font-family: 'MAVIS', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-	margin: 0 0 0.5rem 0;
 }

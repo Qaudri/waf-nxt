@@ -39,9 +39,15 @@ header {
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 2rem 0;
   position: absolute;
+  text-shadow:
+    -5px -5px 0 #000,
+    5px -5px 0 #000,
+    -5px 5px 0 #000,
+    5px 5px 0 #000,
+    0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 header h1:first-child {
@@ -70,27 +76,37 @@ nav {
   align-items: center;
   padding-top: 10rem;
 
+  .logo {
+    max-width: 300px;
+  }
+
+  .woaf {
+    width: 70%;
+  }
+
   ul {
     list-style: none;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 0;
 
-    li a {
-      color: var(--primary-color);
-      font-size: 2rem;
-      transition: .5s ease-in-out;
-      border: 1px solid transparent;
-      padding-bottom: .5rem;
-    }
+    li {
+      text-align: center;
 
-    li a:hover {
-      color: white;
-      border-bottom: 1px solid white;
-      transition: .5s ease-in-out;
+      a {
+        color: var(--primary-color);
+        font-size: 2rem;
+        transition: .5s ease-in-out;
+        border: 1px solid transparent;
+        padding-bottom: .5rem;
+        display: inline-block;
+
+        &:hover {
+          color: white;
+          border-bottom: 1px solid white;
+        }
+      }
     }
   }
 }
@@ -110,11 +126,16 @@ nav {
 
   ul {
     font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    li {
+      text-align: center;
+    }
   }
 
   h2 {
@@ -340,9 +361,371 @@ nav {
   }
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90vw;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .athlete-img {
+    width: 70%;
+  }
+
+  nav ul {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+
+  .main-heading {
+    font-size: 3.5rem;
+    max-width: 85vw;
+  }
+
+  #about {
+    gap: 3rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  #ai-native {
+    > h2 {
+      font-size: 3rem;
+    }
+
+    .ai-list {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+    }
+  }
+
+  #game-play {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .info-grid {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .athlete-img {
+    width: 60%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  nav {
+    padding-top: 5rem;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+
+      li a {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    margin: 6rem auto 0;
+  }
+
+  .cities {
+    padding: 2rem 3rem;
+
+    ul {
+      font-size: 1.8rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  #about {
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+
+    div {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  #ai-native {
+    > h2 {
+      font-size: 2.5rem;
+    }
+
+    .ai-list {
+      grid-template-columns: 1fr;
+
+      > li {
+        h3 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  #game-play {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
   .info-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 2rem 0;
+
+    h1 {
+      font-size: 3rem;
+      position: static;
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+
+  .athlete-img {
+    width: 100%;
+    height: 60vh;
+    clip-path: none;
+  }
+
+  nav {
+    padding-top: 3rem;
+
+    .logo {
+      max-width: 200px;
+    }
+
+    .woaf {
+      width: 100%;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      li a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    margin: 4rem auto 0;
+    max-width: 90vw;
+  }
+
+  .cities {
+    padding: 1.5rem 2rem;
+
+    ul {
+      font-size: 1.8rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  #about,
+  #ai-native,
+  #game-play,
+  .info-grid {
+    margin: 4rem auto;
+  }
+
+  #about {
+    img {
+      height: 300px;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  #about h2,
+  #ai-native > h2,
+  #game-play h2,
+  .info-grid .info-card h2 {
+    font-size: 3rem;
+  }
+
+  #ai-native {
+    > h2 {
+      margin-bottom: 2rem;
+    }
+
+    .ai-list > li {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      ul li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  #game-play p {
+    font-size: 0.95rem;
+  }
+
+  .info-grid {
+    .info-card {
+      padding: 2rem 1.5rem;
+
+      .card-icon {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    .tickets-card .ticket-shape {
+      max-width: 200px;
+      padding: 1.5rem 2rem;
+
+      .ticket-date {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .athlete-img {
+    height: 50vh;
+  }
+
+  nav {
+    .logo {
+      max-width: 150px;
+    }
+
+    .woaf {
+      width: 100%;
+    }
+
+    ul {
+      gap: 1rem;
+
+      li a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+    margin: 3rem auto 0;
+  }
+
+  .cities {
+    padding: 1rem 1.5rem;
+
+    ul {
+      font-size: 1.8rem;
+      gap: 1rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  #about,
+  #ai-native,
+  #game-play,
+  .info-grid {
+    margin: 3rem auto;
+  }
+
+  #about h2,
+  #ai-native > h2,
+  #game-play h2 {
+    font-size: 3rem;
+  }
+
+  #ai-native .ai-list > li {
+    padding: 1.2rem;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    ul li {
+      font-size: 0.85rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .info-grid .info-card {
+    padding: 1.5rem 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .info-grid .tickets-card .ticket-shape {
+    max-width: 180px;
+    padding: 1.2rem 1.5rem;
+
+    .ticket-date {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+    }
   }
 }

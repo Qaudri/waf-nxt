@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   color: white;
@@ -221,6 +225,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  padding-bottom: 3rem;
 
   .info-card {
     background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
@@ -341,4 +346,3 @@ nav {
     gap: 2rem;
   }
 }
-

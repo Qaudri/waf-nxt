@@ -95,7 +95,7 @@ nav {
 .main-heading {
   font-size: 4.5rem;
   text-align: center;
-  margin: 10rem auto 0;
+  margin: 8rem auto 0;
   max-width: 70vw;
 }
 
@@ -103,7 +103,7 @@ nav {
   background: #121212;
   border: 1px solid var(--primary-color);
   padding: 2rem 5rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 
   ul {
     font-size: 2rem;
@@ -118,5 +118,26 @@ nav {
     text-align: center;
     color: var(--primary-color);
     margin: 1rem 0 0;
+  }
+}
+
+#about {
+  margin: 8rem auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  div {
+    max-width: 50%;
+  }
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
   }
 }

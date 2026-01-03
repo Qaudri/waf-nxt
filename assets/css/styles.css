@@ -242,7 +242,7 @@ nav {
 }
 
 .info-grid {
-  margin: 8rem auto;
+  margin: 8rem auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -350,6 +350,14 @@ nav {
       }
     }
   }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #999;
+  border-top: 1px solid #333;
 }
 
 @keyframes ticketFloat {

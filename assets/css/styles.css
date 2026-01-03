@@ -231,11 +231,6 @@ nav {
     margin-bottom: 2rem;
   }
 
-  p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-
   p strong {
     color: var(--primary-color);
   }

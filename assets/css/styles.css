@@ -41,7 +41,7 @@ header {
 
 header h1 {
   font-size: 3.5rem;
-  z-index: 2git;
+  z-index: 2;
   margin: 2rem 0;
   position: absolute;
   text-shadow:

@@ -120,8 +120,6 @@ nav {
 }
 
 .cities {
-  background: #121212;
-  border: 1px solid var(--primary-color);
   padding: 2rem 5rem;
   margin-top: 1rem;
 
@@ -133,6 +131,7 @@ nav {
     margin: 0;
     padding: 0;
     margin: 0 auto;
+    max-width: 50%;
   }
 
   .team-logo-item {
@@ -142,12 +141,11 @@ nav {
     overflow: hidden;
 
     img {
-      width: 70%;
+      width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
       transition: all 0.3s ease;
-      padding: 1rem;
     }
 
     .team-name {
@@ -515,13 +513,13 @@ footer {
     .team-logos {
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
+      max-width: 60%;
     }
 
     .team-logo-item {
       img {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
-        padding: 1rem;
       }
 
       .team-name {
@@ -639,13 +637,13 @@ footer {
     .team-logos {
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
+      max-width: 70%;
     }
 
     .team-logo-item {
       img {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
-        padding: 1rem;
       }
 
       .team-name {
@@ -771,13 +769,13 @@ footer {
 
     .team-logos {
       gap: 1rem;
+      max-width: 80%;
     }
 
     .team-logo-item {
       img {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
-        padding: 1rem;
       }
 
       .team-name {

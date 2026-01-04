@@ -121,17 +121,18 @@ nav {
 }
 
 .cities {
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
   margin-top: 1rem;
+  max-width: 95vw;
 
   .team-logos {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    /* column-gap: 4rem; */
     gap: 2rem;
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 65%;
   }
 
   .team-logo-item {
@@ -141,7 +142,7 @@ nav {
     overflow: hidden;
 
     img {
-      width: 100%;
+      width: 40%;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -162,8 +163,8 @@ nav {
       font-size: 1.8rem;
       opacity: 0;
       transition: opacity 0.3s ease;
-      line-height: 1.2;
-      padding: 1.5rem;
+      line-height: 0.8;
+      padding: 1rem;
       word-wrap: break-word;
       text-align: center;
     }
@@ -210,17 +211,12 @@ nav {
 
 #video-section {
   margin: 3rem auto;
-
-  .video-container {
+  video {
     width: 100%;
-
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(71, 191, 232, 0.3);
-    }
+    aspect-ratio: 16/9;
+    box-shadow: 0 4px 20px rgba(71, 191, 232, 0.3);
   }
+  
 }
 
 #about {
@@ -552,20 +548,19 @@ footer {
 
     .team-logos {
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      max-width: 65%;
+      gap: 2rem;
     }
 
     .team-logo-item {
       img {
-        width: 100%;
+        width: 40%;
         margin: 0 auto;
       }
 
       .team-name {
         font-size: 1.6rem;
         padding: 1rem;
-        line-height: 1.2;
+        line-height: 0.8;
       }
     }
 
@@ -674,23 +669,24 @@ footer {
 
   .cities {
     padding: 1.5rem 2rem;
+    max-width: 95vw;
 
     .team-logos {
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      max-width: 65%;
+      gap: 2rem;
     }
 
     .team-logo-item {
       img {
-        width: 100%;
+        width: 40%;
         margin: 0 auto;
       }
 
       .team-name {
-        font-size: 1.5rem;
-        padding: 0.8rem;
-        line-height: 1.2;
+        font-size: 1.2rem;
+        padding: 1rem;
+        line-height: 0.8;
+        word-break: break-word;
       }
     }
 
@@ -813,10 +809,12 @@ footer {
 
   .cities {
     padding: 1rem 1.5rem;
+    max-width: 95vw;
 
     .team-logos {
-      gap: 1rem;
-      max-width: 65%;
+      column-gap: 3rem;
+      row-gap: 1.5rem;
+      max-width: 40%;
     }
 
     .team-logo-item {
@@ -826,9 +824,10 @@ footer {
       }
 
       .team-name {
-        font-size: 1.3rem;
-        padding: 0.6rem;
-        line-height: 1.2;
+        font-size: 1rem;
+        padding: 0.8rem;
+        line-height: 1.1;
+        word-break: break-word;
       }
     }
 

@@ -75,7 +75,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
 
   .logo {
     max-width: 300px;
@@ -489,7 +489,7 @@ footer {
   }
 
   nav {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
 
     ul {
       display: grid;
@@ -604,7 +604,7 @@ footer {
   }
 
   nav {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 
     .logo {
       max-width: 200px;

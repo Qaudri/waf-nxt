@@ -131,7 +131,7 @@ nav {
     margin: 0;
     padding: 0;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 75%;
   }
 
   .team-logo-item {
@@ -162,8 +162,10 @@ nav {
       font-size: 1.8rem;
       opacity: 0;
       transition: opacity 0.3s ease;
-      line-height: 1;
-      padding: 1rem;
+      line-height: 1.2;
+      padding: 1.5rem;
+      word-wrap: break-word;
+      text-align: center;
     }
 
     &:hover {
@@ -570,7 +572,7 @@ footer {
     .team-logos {
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-      max-width: 60%;
+      max-width: 80%;
     }
 
     .team-logo-item {
@@ -580,9 +582,9 @@ footer {
       }
 
       .team-name {
-        font-size: 2rem;
-        padding: 0.8rem;
-        line-height: 1;
+        font-size: 1.6rem;
+        padding: 1rem;
+        line-height: 1.2;
       }
     }
 
@@ -715,9 +717,9 @@ footer {
       }
 
       .team-name {
-        font-size: 1.8rem;
-        padding: 0.7rem;
-        line-height: 1;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        line-height: 1.2;
       }
     }
 
@@ -859,9 +861,9 @@ footer {
       }
 
       .team-name {
-        font-size: 1.6rem;
-        padding: 0.5rem;
-        line-height: 1;
+        font-size: 1.3rem;
+        padding: 0.6rem;
+        line-height: 1.2;
       }
     }
 

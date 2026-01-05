@@ -209,16 +209,6 @@ nav {
   }
 }
 
-#video-section {
-  margin: 3rem auto;
-  video {
-    width: 100%;
-    aspect-ratio: 16/9;
-    box-shadow: 0 4px 20px rgba(71, 191, 232, 0.3);
-  }
-  
-}
-
 #about {
   margin: 3rem auto;
   text-align: center;
@@ -710,7 +700,6 @@ footer {
     }
   }
 
-  #video-section,
   #about,
   #ai-native,
   #game-play,
@@ -851,7 +840,6 @@ footer {
     }
   }
 
-  #video-section,
   #about,
   #ai-native,
   #game-play,

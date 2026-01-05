@@ -213,24 +213,39 @@ nav {
   margin: 3rem auto;
   text-align: center;
 
-  div {
+  > div {
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
   }
 
   h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
-    grid-column: 1 / -1;
   }
 
-  p {
-    text-align: left;
-    margin: 0;
-    line-height: 1.8;
+  .about-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-text {
+    p {
+      text-align: left;
+      margin: 0 0 1.5rem 0;
+      line-height: 1.8;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .about-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -331,8 +346,6 @@ nav {
     img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(71, 191, 232, 0.3);
     }
   }
 
@@ -583,7 +596,7 @@ footer {
   }
 
   #about {
-    div {
+    .about-content {
       grid-template-columns: 1fr;
       gap: 2rem;
     }

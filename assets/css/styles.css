@@ -142,7 +142,7 @@ nav {
     overflow: hidden;
 
     img {
-      width: 40%;
+      width: 30%;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -548,7 +548,7 @@ footer {
 
     .team-logo-item {
       img {
-        width: 40%;
+        width: 30%;
         margin: 0 auto;
       }
 
@@ -674,7 +674,7 @@ footer {
 
     .team-logo-item {
       img {
-        width: 40%;
+        width: 30%;
         margin: 0 auto;
       }
 
@@ -814,7 +814,7 @@ footer {
 
     .team-logo-item {
       img {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
       }
 

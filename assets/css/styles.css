@@ -80,10 +80,12 @@ nav {
 
   .logo {
     max-width: 300px;
+    margin-bottom: 2rem;
   }
 
   .woaf {
     width: 70%;
+    margin-bottom: 3rem;
   }
 
   ul {
@@ -178,15 +180,15 @@ nav {
 
   h2 {
     text-align: center;
-    color: var(--primary-color);
-    margin: 3rem 0 0;
+    color: #fff;
+    margin: 4rem 0 0;
   }
 
   .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin: 3.5rem 0 1rem;
 
     a {
@@ -197,8 +199,8 @@ nav {
       justify-content: center;
 
       svg {
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
       }
 
       &:hover {
@@ -223,17 +225,20 @@ nav {
   }
 
   .about-content {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     align-items: center;
   }
 
   .about-text {
+    max-width: 1200px;
+
     p {
       text-align: left;
       margin: 0 0 1.5rem 0;
       line-height: 1.8;
+      font-size: 1.3rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -242,6 +247,9 @@ nav {
   }
 
   .about-image {
+    max-width: 800px;
+    width: 100%;
+
     img {
       width: 100%;
       height: auto;
@@ -335,13 +343,13 @@ nav {
   h2 {
     font-size: 4rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .play-format-diagram {
-    margin: 3rem auto;
+    margin: 0 auto 3rem;
     text-align: center;
-    max-width: 900px;
+    max-width: 1200px;
 
     img {
       width: 100%;
@@ -349,8 +357,23 @@ nav {
     }
   }
 
-  p strong {
-    color: var(--primary-color);
+  .gameplay-text {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      strong {
+        color: var(--primary-color);
+      }
+    }
   }
 }
 
@@ -586,23 +609,22 @@ footer {
     }
 
     .social-icons {
-      gap: 1.5rem;
+      gap: 2.5rem;
 
       a svg {
-        width: 28px;
-        height: 28px;
+        width: 36px;
+        height: 36px;
       }
     }
   }
 
   #about {
-    .about-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
     h2 {
       font-size: 2.5rem;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
     }
   }
 
@@ -666,10 +688,12 @@ footer {
 
     .logo {
       max-width: 200px;
+      margin-bottom: 1.5rem;
     }
 
     .woaf {
       width: 100%;
+      margin-bottom: 2rem;
     }
 
     ul {
@@ -713,16 +737,17 @@ footer {
     }
 
     .social-icons {
-      gap: 1.2rem;
+      gap: 2rem;
 
       a svg {
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
       }
     }
 
     h2 {
       font-size: 3rem;
+      margin: 3.5rem 0 0;
     }
   }
 
@@ -808,10 +833,12 @@ footer {
   nav {
     .logo {
       max-width: 150px;
+      margin-bottom: 1rem;
     }
 
     .woaf {
       width: 100%;
+      margin-bottom: 1.5rem;
     }
 
     ul {
@@ -853,16 +880,17 @@ footer {
     }
 
     .social-icons {
-      gap: 1rem;
+      gap: 1.5rem;
 
       a svg {
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
       }
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      margin: 3rem 0 0;
     }
   }
 

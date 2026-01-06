@@ -76,16 +76,24 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 4rem;
 
   .logo {
-    max-width: 300px;
-    margin-bottom: 2rem;
+    max-width: 320px;
+    margin-bottom: 2.5rem;
+    filter: drop-shadow(0 0 20px rgba(71, 191, 232, 0.3));
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 30px rgba(71, 191, 232, 0.5));
+    }
   }
 
   .woaf {
-    width: 70%;
-    margin-bottom: 3rem;
+    width: 65%;
+    margin-bottom: 4rem;
+    filter: drop-shadow(0 0 15px rgba(71, 191, 232, 0.2));
   }
 
   ul {
@@ -94,6 +102,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 0;
+    margin-bottom: 2rem;
 
     li {
       text-align: center;
@@ -101,14 +110,16 @@ nav {
       a {
         color: var(--primary-color);
         font-size: 2rem;
-        transition: .5s ease-in-out;
+        transition: all 0.3s ease;
         border: 1px solid transparent;
         padding-bottom: .5rem;
         display: inline-block;
+        position: relative;
 
         &:hover {
           color: white;
           border-bottom: 1px solid white;
+          transform: translateY(-3px);
         }
       }
     }
@@ -123,17 +134,16 @@ nav {
 }
 
 .cities {
-  padding: 2rem 3rem;
-  margin-top: 1rem;
+  padding: 3rem 3rem;
+  margin-top: 2rem;
   max-width: 95vw;
 
   .team-logos {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* column-gap: 4rem; */
-    gap: 2rem;
+    gap: 3rem 2rem;
     list-style: none;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     padding: 0;
   }
 
@@ -142,13 +152,28 @@ nav {
     text-align: center;
     cursor: pointer;
     overflow: hidden;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.1);
+
+      img {
+        filter: drop-shadow(0 0 25px rgba(71, 191, 232, 0.7));
+      }
+
+      .team-name {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.95);
+      }
+    }
 
     img {
       width: 30%;
       height: auto;
       display: block;
       margin: 0 auto;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
+      filter: drop-shadow(0 0 10px rgba(71, 191, 232, 0.3));
     }
 
     .team-name {
@@ -158,23 +183,18 @@ nav {
       right: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.85);
-      color: #fff;
+      color: var(--primary-color);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.8rem;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: all 0.4s ease;
       line-height: 0.8;
       padding: 1rem;
       word-wrap: break-word;
       text-align: center;
-    }
-
-    &:hover {
-      .team-name {
-        opacity: 1;
-      }
+      text-shadow: 0 0 10px rgba(71, 191, 232, 0.5);
     }
   }
 
@@ -188,12 +208,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin: 3.5rem 0 1rem;
+    gap: 3.5rem;
+    margin: 4rem 0 2rem;
 
     a {
       color: var(--primary-color);
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -201,18 +221,23 @@ nav {
       svg {
         width: 40px;
         height: 40px;
+        filter: drop-shadow(0 0 5px rgba(71, 191, 232, 0.3));
       }
 
       &:hover {
         color: #fff;
-        transform: translateY(-3px);
+        transform: translateY(-5px) scale(1.15);
+
+        svg {
+          filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+        }
       }
     }
   }
 }
 
 #about {
-  margin: 3rem auto;
+  margin: 6rem auto;
   text-align: center;
 
   > div {
@@ -220,27 +245,31 @@ nav {
   }
 
   h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    margin-bottom: 3.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
+    letter-spacing: 2px;
   }
 
   .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 4rem;
     align-items: start;
   }
 
   .about-text {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.8rem;
 
     p {
       text-align: left;
       margin: 0;
-      line-height: 1.8;
-      font-size: 1.3rem;
+      line-height: 1.9;
+      font-size: 1.35rem;
+      color: rgba(255, 255, 255, 0.95);
     }
   }
 
@@ -250,18 +279,28 @@ nav {
     img {
       width: 100%;
       height: auto;
-      border: 2px solid var(--primary-color);
+      border: 3px solid var(--primary-color);
+      box-shadow: 0 0 30px rgba(71, 191, 232, 0.3);
+      transition: all 0.4s ease;
+
+      &:hover {
+        box-shadow: 0 0 50px rgba(71, 191, 232, 0.6);
+        transform: scale(1.02);
+      }
     }
   }
 }
 
 #ai-native {
-  margin: 3rem auto;
+  margin: 6rem auto;
 
   > h2 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
     text-align: center;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
+    letter-spacing: 2px;
   }
 
   .ai-list {
@@ -336,23 +375,33 @@ nav {
 }
 
 #game-play {
-  margin: 3rem auto;
+  margin: 6rem auto;
 
   h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
+    letter-spacing: 2px;
   }
 
   .play-format-diagram {
-    margin: 0 auto 3rem;
+    margin: 0 auto 4rem;
     text-align: center;
     max-width: 1000px;
 
     img {
       width: 100%;
       height: auto;
-      border: 2px solid var(--primary-color);
+      border: 3px solid var(--primary-color);
+      box-shadow: 0 0 30px rgba(71, 191, 232, 0.3);
+      transition: all 0.4s ease;
+
+      &:hover {
+        box-shadow: 0 0 50px rgba(71, 191, 232, 0.6);
+        transform: scale(1.02);
+      }
     }
   }
 
@@ -360,13 +409,14 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
     column-count: 2;
-    column-gap: 3rem;
+    column-gap: 4rem;
 
     p {
-      font-size: 1.3rem;
-      line-height: 1.8;
-      margin: 0 0 1rem 0;
+      font-size: 1.35rem;
+      line-height: 1.9;
+      margin: 0 0 1.2rem 0;
       break-inside: avoid;
+      color: rgba(255, 255, 255, 0.95);
 
       &:last-child {
         margin-bottom: 0;
@@ -374,6 +424,7 @@ nav {
 
       strong {
         color: var(--primary-color);
+        text-shadow: 0 0 10px rgba(71, 191, 232, 0.3);
       }
     }
   }
@@ -492,10 +543,12 @@ nav {
 
 footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 0 2rem;
+  margin-top: 6rem;
   font-size: 1rem;
   color: #999;
-  border-top: 1px solid #333;
+  border-top: 2px solid var(--primary-color);
+  background: linear-gradient(180deg, transparent 0%, rgba(71, 191, 232, 0.05) 100%);
 }
 
 @keyframes ticketFloat {

@@ -455,8 +455,8 @@ nav {
     margin: 0 auto;
 
     p {
-      font-size: .5rem;
-      line-height: 1.6;
+      /* font-size: 1.2rem; */
+      /* line-height: 1.6; */
       margin: 0 0 1rem 0;
       color: rgba(255, 255, 255, 0.98);
 

@@ -263,6 +263,8 @@ nav {
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
   }
 
   .about-text {

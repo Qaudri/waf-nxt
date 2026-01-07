@@ -72,6 +72,13 @@ header h1:last-child {
 }
 
 
+.img-header{ 
+  width: 100vw;
+  /* height: 100vh; */
+  object-fit: cover;
+  border-bottom: 1px solid var(--primary-color);
+}
+
 nav {
   display: flex;
   flex-direction: column;

@@ -414,15 +414,12 @@ nav {
   .gameplay-text {
     max-width: 1400px;
     margin: 0 auto;
-    column-count: 2;
-    column-gap: 4rem;
 
     p {
-      font-size: 1.35rem;
-      line-height: 1.9;
-      margin: 0 0 1.2rem 0;
-      break-inside: avoid;
-      color: rgba(255, 255, 255, 0.95);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0 0 1rem 0;
+      color: rgba(255, 255, 255, 0.98);
 
       &:last-child {
         margin-bottom: 0;
@@ -700,11 +697,6 @@ footer {
     }
   }
 
-  #game-play {
-    .gameplay-text {
-      column-count: 1;
-    }
-  }
 
   #ai-native {
     > h2 {
@@ -868,7 +860,7 @@ footer {
   }
 
   #game-play p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .info-grid {

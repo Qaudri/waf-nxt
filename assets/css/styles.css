@@ -134,7 +134,7 @@ nav {
 }
 
 .cities {
-  padding: 3rem 3rem;
+  padding: 3rem 3rem 1rem 3rem;
   margin-top: 2rem;
   max-width: 95vw;
 
@@ -209,7 +209,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 3.5rem;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 0.5rem 0;
+    padding-bottom: 0;
 
     a {
       color: var(--primary-color);
@@ -237,7 +238,7 @@ nav {
 }
 
 #about {
-  margin: 6rem auto;
+  margin: 2rem auto 1rem;
   text-align: center;
 
   > div {
@@ -246,7 +247,8 @@ nav {
 
   h2 {
     font-size: 4.5rem;
-    margin-bottom: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
     color: var(--primary-color);
     text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
     letter-spacing: 2px;
@@ -287,11 +289,12 @@ nav {
 }
 
 #ai-native {
-  margin: 6rem auto;
+  margin: 2rem auto 1rem;
 
   > h2 {
     font-size: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     text-align: center;
     color: var(--primary-color);
     text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
@@ -370,12 +373,13 @@ nav {
 }
 
 #game-play {
-  margin: 6rem auto;
+  margin: 2rem auto 6rem;
 
   h2 {
     font-size: 4.5rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     color: var(--primary-color);
     text-shadow: 0 0 20px rgba(71, 191, 232, 0.4);
     letter-spacing: 2px;
@@ -638,7 +642,7 @@ footer {
   }
 
   .cities {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 1rem 3rem;
 
     .team-logos {
       grid-template-columns: repeat(3, 1fr);
@@ -780,7 +784,7 @@ footer {
   }
 
   .cities {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 0.5rem 2rem;
     max-width: 95vw;
 
     .team-logos {
@@ -922,7 +926,7 @@ footer {
   }
 
   .cities {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
     max-width: 95vw;
 
     .team-logos {
@@ -964,7 +968,7 @@ footer {
   #ai-native,
   #game-play,
   .info-grid {
-    margin: 1.5rem auto;
+    margin: 2rem auto;
   }
 
   #about h2,

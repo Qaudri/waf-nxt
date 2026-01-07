@@ -258,8 +258,8 @@ nav {
     position: relative;
     width: 100%;
     min-height: 700px;
-    background-size: cover;
-    background-position: center;
+    background-size: 110%;
+    background-position: center left;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -269,7 +269,7 @@ nav {
 
   .about-text {
     width: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.9);
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -280,8 +280,13 @@ nav {
       text-align: left;
       margin: 0;
       line-height: 1.6;
-      font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.95);
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.98);
+
+      strong {
+        color: var(--primary-color);
+        font-weight: 600;
+      }
     }
   }
 
@@ -688,8 +693,9 @@ footer {
       gap: 0.8rem;
 
       p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.98);
       }
     }
   }
@@ -832,7 +838,7 @@ footer {
 
   #about {
     p {
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
   }
 

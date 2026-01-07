@@ -81,19 +81,16 @@ nav {
   .logo {
     max-width: 320px;
     margin-bottom: 2.5rem;
-    filter: drop-shadow(0 0 20px rgba(71, 191, 232, 0.3));
     transition: transform 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
-      filter: drop-shadow(0 0 30px rgba(71, 191, 232, 0.5));
     }
   }
 
   .woaf {
     width: 65%;
     margin-bottom: 4rem;
-    filter: drop-shadow(0 0 15px rgba(71, 191, 232, 0.2));
   }
 
   ul {

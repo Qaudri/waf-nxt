@@ -254,9 +254,9 @@ nav {
   .about-content {
     position: relative;
     width: 100%;
-    min-height: 700px;
+    min-height: 1000px;
     background-size: 110%;
-    background-position: center left;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
@@ -560,6 +560,14 @@ footer {
   }
 }
 
+
+
+
+
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .container {
@@ -679,7 +687,7 @@ footer {
     }
 
     .about-content {
-      min-height: 700px;
+      min-height: 1000px;
     }
 
     .about-text {
